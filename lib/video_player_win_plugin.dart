@@ -144,7 +144,7 @@ class WindowsVideoPlayer extends VideoPlayerPlatform {
   Widget buildView(int textureId) {
     var controller =
         VideoPlayerWinPlatform.instance.getPlayerByTextureId(textureId)!;
-    return WinVideoPlayer(controller);
+    return Texture(textureId: controller.textureId_);
   }
 
   /// Sets the audio mode to mix with other sources
